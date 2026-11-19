@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Page introuvable | Portfolio Nathan Herbert</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: #f2efeb;
+        color: #0b0b0b;
+        font: 13px/1.6 "JetBrains Mono", ui-monospace, monospace;
+      }
+      header, section { padding: 16px 20px; }
+      header, .return { border-bottom: 1px solid rgba(11, 11, 11, 0.16); }
+      section { padding-top: 64px; padding-bottom: 64px; }
+      .return { border-top: 1px solid rgba(11, 11, 11, 0.16); }
+      .eyebrow { font-size: 11px; letter-spacing: 0.08em; }
+      h1 {
+        margin: 24px 0;
+        font: 780 clamp(38px, 7vw, 100px)/1.02 Inter, system-ui, sans-serif;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+      }
+      p { margin: 0; }
+      a { color: inherit; text-underline-offset: 5px; }
+      a:hover, a:focus-visible { background: #0b0b0b; color: #00ff00; }
+      @media (min-width: 768px) {
+        header, section { padding-left: 40px; padding-right: 40px; }
+        section { padding-top: 80px; padding-bottom: 80px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>NATHAN·HERBERT</header>
+    <main>
+      <section>
+        <p class="eyebrow">404 — BTS SIO SISR</p>
+        <h1>Page introuvable</h1>
+        <p>Cette adresse ne correspond à aucune page du portfolio.</p>
+      </section>
+      <section class="return">
+        <a id="home-link" href="./index.html">Retour à l’accueil →</a>
+      </section>
+    </main>
+    <script>
+      // GitHub Pages conserve l’URL introuvable. Retrouver le dossier
+      // du portfolio avant de générer le lien de retour.
+      const homeLink = document.getElementById('home-link');
+      if (location.protocol === 'https:' || location.protocol === 'http:') {
+        const firstSegment = location.pathname.split('/')[1];
+        homeLink.href = '/';
+
+        async function findHome() {
+          if (!firstSegment || firstSegment === '404.html') return '/';
+          const folder = '/' + firstSegment + '/';
+          try {
+            const response = await fetch(folder + 'index.html', {
+              redirect: 'error',
+              signal: AbortSignal.timeout(3000)
+            });
+            if (response.ok && (await response.text()).includes('name="portfolio-home" content="nathan-herbert"')) {
+              return folder;
+            }
+          } catch {
+            // L’adresse à la racine reste utilisable si la vérification échoue.
+          }
+          return '/';
+        }
+
+        const homepage = findHome();
+        homepage.then(address => { homeLink.href = address; });
+        homeLink.addEventListener('click', async event => {
+          if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+          event.preventDefault();
+          location.assign(await homepage);
+        });
+      }
+    </script>
+  </body>
+</html>

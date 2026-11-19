@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suivre les sujets qui peuvent changer ma façon d’administrer et de sécuriser une infrastructure.">
+    <meta property="og:title" content="Veille | Portfolio Nathan Herbert">
+    <meta property="og:description" content="Suivre les sujets qui peuvent changer ma façon d’administrer et de sécuriser une infrastructure.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Portfolio Nathan Herbert">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <meta name="theme-color" content="#f2efeb">
+    <title>Veille | Portfolio Nathan Herbert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="../assets/site.js" defer=""></script>
+  </head>
+  <body>
+    <header class="fixed inset-x-0 top-0 z-50 border-b bg-paper">
+      <a href="#main-content" class="skip-link">Aller au contenu</a>
+      <div class="flex h-11 items-center justify-between gap-4 px-5 text-11px tracking-wide tablet-px-10">
+        <a class="shrink-0 font-medium hover-underline" href="../index.html">NATHAN·HERBERT</a>
+        <nav aria-label="Navigation principale" class="hidden items-center gap-5 desktop-flex header-navigation">
+          <a class="nav-link" href="../index.html">Accueil</a>
+          <a class="nav-link" href="../parcours/index.html">Parcours</a>
+          <a class="nav-link" href="../competences/index.html">Compétences</a>
+          <a class="nav-link" href="../outils/index.html">Outils</a>
+          <a class="nav-link" href="../projets/index.html">Projets</a>
+          <a aria-current="page" class="nav-link nav-active" href="../veille/index.html">Veille</a>
+          <a class="nav-link" href="../contact/index.html">Contact</a>
+        </nav>
+        <span class="hidden shrink-0 tabular-nums text-muted small-inline desktop-hidden wide-inline">Île-de-France — <time data-clock=""></time></span>
+        <button type="button" aria-expanded="false" aria-controls="mobile-navigation" class="border px-3 py-1 uppercase desktop-hidden" hidden="" data-label-closed="Menu" data-label-open="Fermer">Menu</button>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1" class="page-shell">
+      <div class="page-heading">
+        <p class="eyebrow">05 — BTS SIO SISR</p>
+        <h1 class="display-title">Veille technologique</h1>
+        <p class="page-intro">Suivre les sujets qui peuvent changer ma façon d’administrer et de sécuriser une infrastructure.</p>
+      </div>
+      <section class="editorial-section">
+        <h2 class="section-title">Ma méthode de veille</h2>
+        <div>
+          <p class="reading-copy">Une méthode que je mets en place pendant le BTS : partir d’une question, croiser les sources, puis garder une note utile à mes projets.</p>
+          <ol class="numbered-list mt-6">
+            <li>Consulter des sources spécialisées et les publications du CERT-FR / de l’ANSSI.</li>
+            <li>Revenir à la documentation des éditeurs et constructeurs.</li>
+            <li>Suivre les dépôts GitHub, blogs sécurité et communautés techniques.</li>
+            <li>Organiser les lectures avec des flux RSS lorsque c’est pertinent.</li>
+            <li>Noter la date, la source, les limites et les conséquences pratiques.</li>
+          </ol>
+        </div>
+      </section>
+      <p class="page-heading border-t compact-section text-12px text-muted">Six sujets de démonstration, rédigés le 8 octobre 2026. Ce sont des pistes de veille, pas des actualités vérifiées ni des articles déjà consultés.</p>
+      <article class="editorial-section">
+        <div>
+          <p class="eyebrow">01 — IA / sécurité</p>
+          <p class="mt-3 text-11px">Sujet de démonstration</p>
+          <p class="mt-2 text-11px text-muted">Rédigé le <time datetime="2026-10-08">08.10.2026</time></p>
+        </div>
+        <div class="min-w-0">
+          <h2 class="section-title">Intelligence artificielle et cybersécurité</h2>
+          <p class="reading-copy mt-6">Sujet de démonstration : explorer l’assistance à l’analyse technique et la vérification des réponses produites par un modèle.</p>
+          <dl class="mt-8 space-y-5">
+            <div>
+              <dt class="eyebrow">Pourquoi je m’y intéresse</dt>
+              <dd class="mt-2">Ce sujet rejoint mon expérimentation d’assistant local pour Nmap et Burp.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Lien avec le SISR</dt>
+              <dd class="mt-2">Étudier comment utiliser une assistance sans perdre la maîtrise des données et du diagnostic.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Technologies concernées</dt>
+              <dd><ul class="tag-list mt-3"><li>LLM local</li><li>RAG</li><li>Nmap</li><li>Burp Suite</li></ul></dd>
+            </div>
+            <div class="border-t pt-5">
+              <dt class="eyebrow">Source à documenter</dt>
+              <dd class="mt-2 text-12px text-muted">Documentation des modèles et des outils ; publications ANSSI à sélectionner.<br>Une référence précise et sa date de consultation seront ajoutées après lecture.</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+      <article class="editorial-section">
+        <div>
+          <p class="eyebrow">02 — Menaces / défense</p>
+          <p class="mt-3 text-11px">Sujet de démonstration</p>
+          <p class="mt-2 text-11px text-muted">Rédigé le <time datetime="2026-10-08">08.10.2026</time></p>
+        </div>
+        <div class="min-w-0">
+          <h2 class="section-title">Évolution des ransomwares</h2>
+          <p class="reading-copy mt-6">Sujet de démonstration : étudier les scénarios d’infection, les sauvegardes et la préparation d’une restauration.</p>
+          <dl class="mt-8 space-y-5">
+            <div>
+              <dt class="eyebrow">Pourquoi je m’y intéresse</dt>
+              <dd class="mt-2">Je veux relier les menaces aux choix d’administration de mon homelab.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Lien avec le SISR</dt>
+              <dd class="mt-2">Identifier les questions à poser sur les droits, l’isolation et les sauvegardes.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Technologies concernées</dt>
+              <dd><ul class="tag-list mt-3"><li>Sauvegardes</li><li>Windows</li><li>Linux</li><li>Segmentation</li></ul></dd>
+            </div>
+            <div class="border-t pt-5">
+              <dt class="eyebrow">Source à documenter</dt>
+              <dd class="mt-2 text-12px text-muted">Guides ANSSI et bulletins CERT-FR à consulter.<br>Une référence précise et sa date de consultation seront ajoutées après lecture.</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+      <article class="editorial-section">
+        <div>
+          <p class="eyebrow">03 — Systèmes / Linux</p>
+          <p class="mt-3 text-11px">Sujet de démonstration</p>
+          <p class="mt-2 text-11px text-muted">Rédigé le <time datetime="2026-10-08">08.10.2026</time></p>
+        </div>
+        <div class="min-w-0">
+          <h2 class="section-title">Sécurité des systèmes Linux</h2>
+          <p class="reading-copy mt-6">Sujet de démonstration : comparer les pratiques de gestion des comptes, des permissions et des services exposés.</p>
+          <dl class="mt-8 space-y-5">
+            <div>
+              <dt class="eyebrow">Pourquoi je m’y intéresse</dt>
+              <dd class="mt-2">Ubuntu est mon environnement de pratique et une base de mes projets.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Lien avec le SISR</dt>
+              <dd class="mt-2">Construire une checklist de configuration et de maintenance adaptée à un serveur de laboratoire.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Technologies concernées</dt>
+              <dd><ul class="tag-list mt-3"><li>Ubuntu</li><li>SSH</li><li>Permissions</li><li>Services</li></ul></dd>
+            </div>
+            <div class="border-t pt-5">
+              <dt class="eyebrow">Source à documenter</dt>
+              <dd class="mt-2 text-12px text-muted">Documentation Ubuntu et guides de sécurisation Linux à lire.<br>Une référence précise et sa date de consultation seront ajoutées après lecture.</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+      <article class="editorial-section">
+        <div>
+          <p class="eyebrow">04 — Web / sécurité</p>
+          <p class="mt-3 text-11px">Sujet de démonstration</p>
+          <p class="mt-2 text-11px text-muted">Rédigé le <time datetime="2026-10-08">08.10.2026</time></p>
+        </div>
+        <div class="min-w-0">
+          <h2 class="section-title">Vulnérabilités web : apprendre à les suivre</h2>
+          <p class="reading-copy mt-6">Sujet de démonstration : apprendre à lire un avis de sécurité et à distinguer une faille documentée d’une hypothèse de challenge.</p>
+          <dl class="mt-8 space-y-5">
+            <div>
+              <dt class="eyebrow">Pourquoi je m’y intéresse</dt>
+              <dd class="mt-2">Je travaille l’analyse HTTP et les challenges web sur Root Me.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Lien avec le SISR</dt>
+              <dd class="mt-2">Savoir identifier les versions concernées et les actions à vérifier, sans inventer de CVE.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Technologies concernées</dt>
+              <dd><ul class="tag-list mt-3"><li>HTTP</li><li>Burp Suite</li><li>Applications web</li></ul></dd>
+            </div>
+            <div class="border-t pt-5">
+              <dt class="eyebrow">Source à documenter</dt>
+              <dd class="mt-2 text-12px text-muted">Avis éditeurs, CERT-FR et documentation OWASP à sélectionner.<br>Une référence précise et sa date de consultation seront ajoutées après lecture.</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+      <article class="editorial-section">
+        <div>
+          <p class="eyebrow">05 — Architecture / accès</p>
+          <p class="mt-3 text-11px">Sujet de démonstration</p>
+          <p class="mt-2 text-11px text-muted">Rédigé le <time datetime="2026-10-08">08.10.2026</time></p>
+        </div>
+        <div class="min-w-0">
+          <h2 class="section-title">Zero Trust</h2>
+          <p class="reading-copy mt-6">Sujet de démonstration : découvrir les questions d’identité, de contrôle d’accès et de vérification dans une infrastructure.</p>
+          <dl class="mt-8 space-y-5">
+            <div>
+              <dt class="eyebrow">Pourquoi je m’y intéresse</dt>
+              <dd class="mt-2">Je souhaite mieux comprendre ce qui autorise un utilisateur ou un service à accéder à une ressource.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Lien avec le SISR</dt>
+              <dd class="mt-2">Relier les notions d’accès aux comptes, aux services et à la segmentation étudiés en SISR.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Technologies concernées</dt>
+              <dd><ul class="tag-list mt-3"><li>Identités</li><li>Contrôle d’accès</li><li>Segmentation</li></ul></dd>
+            </div>
+            <div class="border-t pt-5">
+              <dt class="eyebrow">Source à documenter</dt>
+              <dd class="mt-2 text-12px text-muted">Documentation d’architecture NIST et ANSSI à consulter.<br>Une référence précise et sa date de consultation seront ajoutées après lecture.</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+      <article class="editorial-section">
+        <div>
+          <p class="eyebrow">06 — Cloud / infrastructure</p>
+          <p class="mt-3 text-11px">Sujet de démonstration</p>
+          <p class="mt-2 text-11px text-muted">Rédigé le <time datetime="2026-10-08">08.10.2026</time></p>
+        </div>
+        <div class="min-w-0">
+          <h2 class="section-title">Sécurité des infrastructures cloud</h2>
+          <p class="reading-copy mt-6">Sujet de démonstration : explorer la configuration des droits, des journaux et des ressources exposées dans un environnement cloud.</p>
+          <dl class="mt-8 space-y-5">
+            <div>
+              <dt class="eyebrow">Pourquoi je m’y intéresse</dt>
+              <dd class="mt-2">Comparer les questions de sécurité d’un homelab à celles d’une infrastructure hébergée.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Lien avec le SISR</dt>
+              <dd class="mt-2">Préparer mes bases sur les responsabilités, les configurations et la surveillance.</dd>
+            </div>
+            <div>
+              <dt class="eyebrow">Technologies concernées</dt>
+              <dd><ul class="tag-list mt-3"><li>IAM</li><li>Journalisation</li><li>Réseaux cloud</li><li>Stockage</li></ul></dd>
+            </div>
+            <div class="border-t pt-5">
+              <dt class="eyebrow">Source à documenter</dt>
+              <dd class="mt-2 text-12px text-muted">Documentation sécurité des fournisseurs cloud à comparer.<br>Une référence précise et sa date de consultation seront ajoutées après lecture.</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <p class="eyebrow">Un stage, un projet, une question ?</p>
+      <a class="font-display mt-4 inline-block footer-title-size font-bold-display leading-tight tracking-tight underline decoration-1 underline-offset-8" href="../contact/index.html">Me contacter →</a>
+      <nav aria-label="Portfolio Nathan Herbert" class="mt-10 flex flex-wrap gap-x-6 gap-y-3 border-t pt-5">
+        <a class="text-11px uppercase hover-underline" href="../index.html">Accueil</a>
+        <a class="text-11px uppercase hover-underline" href="../parcours/index.html">Parcours</a>
+        <a class="text-11px uppercase hover-underline" href="../competences/index.html">Compétences</a>
+        <a class="text-11px uppercase hover-underline" href="../outils/index.html">Outils</a>
+        <a class="text-11px uppercase hover-underline" href="../projets/index.html">Projets</a>
+        <a class="text-11px uppercase hover-underline" href="../veille/index.html">Veille</a>
+        <a class="text-11px uppercase hover-underline" href="../contact/index.html">Contact</a>
+      </nav>
+      <div class="mt-10 flex flex-wrap justify-between gap-3 border-t pt-4 text-10px tracking-wide text-muted">
+        <span>© 2026 NATHAN HERBERT</span>
+        <span>Composé en JetBrains Mono &amp; Inter — systèmes, réseaux et cybersécurité.</span>
+      </div>
+    </footer>
+  </body>
+</html>
